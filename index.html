@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Weather App</title>   
+</head>
+<body>
+    <div class="container">
+        <form id="search-form">
+            <input type="search" 
+            placeholder="Enter a city" 
+            class="search" 
+            id="city-input" 
+            autocomplete="off">
+        </form>
+        <div class="current-weather-section">
+            <div class="row">
+                <div class="col-5 current-weather-info-section">
+                    <h1 id="city">Santiago</h1>
+                    <ul>
+                        <li id="date"></li>
+                        <li class="temperature-description" id="temp-description">overcast clouds</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <img class="current-icon" src="" alt="">
+                </div>
+                <div class="col-5 current-weather-info-section">
+                    <h2>18</h2><span class="unit">°C</span>
+                    <ul>
+                        <li>Precipitation: <span id="precipitation">20</span>%</li>
+                        <li>Humidity: <span id="humidity">90</span>%</li>
+                        <li>Wind: <span id="wind">3</span>km/h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="src/app.js"></script>
+    
+</body>
+</html>
