@@ -21,16 +21,21 @@
                 <div class="col-5 current-weather-info-section">
                     <h1 id="city">Santiago</h1>
                     <ul>
-                        <li id="date"></li>
+                        <li id="date">Sunday, 15:35</li>
                         <li class="temperature-description" id="temp-description">overcast clouds</li>
                     </ul>
+                    <div class="temperature">
+                        <span>18</span>
+                        <span>
+                            <a href="#" id="celsius">°C</a>
+                            <a href="#" id="farenheit">°F</a>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <img class="current-icon" src="" alt="">
+                    <img class="current-icon" src="./icons/partly.png" alt="partly cloudy">
                 </div>
                 <div class="col-5 current-weather-info-section">
-                    <h2>18</h2><span class="unit">°C</span>
-                    <ul>
                         <li>Precipitation: <span id="precipitation">20</span>%</li>
                         <li>Humidity: <span id="humidity">90</span>%</li>
                         <li>Wind: <span id="wind">3</span>km/h</li>
@@ -38,7 +43,79 @@
                 </div>
             </div>
         </div>
-        <script src="src/app.js"></script>
-    
+        <hr>
+        <div class="weather-forecast">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="forecast-wrapper">
+                        <div class="weather-forecast-date">Sun</div>
+                        <img src="img/04d.png" alt="forecast weather icon" class="forecast-weather-icon">
+                        <div class="forecast-temperature-wrapper">
+                            <span class="forecast-max-temp">12</span>
+                            <span class="forecast-min-temp">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="forecast-wrapper">
+                        <div class="weather-forecast-date">Mon</div>
+                        <img src="img/04d.png" alt="forecast weather icon" class="forecast-weather-icon">
+                        <div class="forecast-temperature-wrapper">
+                            <span class="forecast-max-temp">12</span>
+                            <span class="forecast-min-temp">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="forecast-wrapper">
+                        <div class="weather-forecast-date">Tue</div>
+                        <img src="img/04d.png" alt="forecast weather icon" class="forecast-weather-icon">
+                        <div class="forecast-temperature-wrapper">
+                            <span class="forecast-max-temp">12</span>
+                            <span class="forecast-min-temp">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="forecast-wrapper">
+                        <div class="weather-forecast-date">Wed</div>
+                        <img src="img/04d.png" alt="forecast weather icon" class="forecast-weather-icon">
+                        <div class="forecast-temperature-wrapper">
+                            <span class="forecast-max-temp">12</span>
+                            <span class="forecast-min-temp">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="forecast-wrapper">
+                        <div class="weather-forecast-date">Thu</div>
+                        <img src="img/04d.png" alt="forecast weather icon" class="forecast-weather-icon">
+                        <div class="forecast-temperature-wrapper">
+                            <span class="forecast-max-temp">12</span>
+                            <span class="forecast-min-temp">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="forecast-wrapper">
+                        <div class="weather-forecast-date">Fri</div>
+                        <img src="img/10d.png" alt="forecast weather icon" class="forecast-weather-icon">
+                        <div class="forecast-temperature-wrapper">
+                            <span class="forecast-max-temp">17</span>
+                            <span class="forecast-min-temp">14</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <small>
+        <a href="https://github.com/catralars/vanilla-weather-app" 
+        target="_blank"
+        rel="noreferrer">
+        Open source code
+        </a> by Catalina Opazo
+    </small>
+    <script src="src/app.js"></script>
 </body>
 </html>
