@@ -10,13 +10,21 @@
 </head>
 <body>
     <div class="container">
-        <form id="search-form">
-            <input type="search" 
-            placeholder="Enter a city" 
-            class="search" 
-            id="city-input" 
-            autocomplete="off">
-        </form>
+        <div class="top-section">
+            <form class="search-engine" id="search-form">
+              <input type="text" 
+               placeholder="Search city" 
+               autofocus="on" 
+               autocomplete="off" 
+               id="input-text" />
+               <button type="submit" class="search-btn">
+                <i class="bi bi-search"></i>
+               </button>
+               <button class="current-btn" id="current-button">
+                Current city
+               </button>
+            </form>
+        </div>
         <div class="current-weather-section">
             <div class="row">
                 <div class="col-5 current-weather-info-section">
@@ -38,13 +46,13 @@
                 </div>
                 <div class="col-4 current-weather-info-section">
                         <li>Precipitation: <span id="precipitation">20</span>%</li>
-                        <li>Humidity: <span id="humidity">90</span>%</li>
+                        <li>Humidity: <span id="humidity">11</span>%</li>
                         <li>Wind: <span id="wind">3</span>km/h</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="division">
         <div class="weather-forecast">
             <div class="row">
                 <div class="col-sm-2">

@@ -1,7 +1,9 @@
-let apiKey = "b29fbb7204d51ccd97bdcec9a167f38c";
-let units = "metric";
-let city = "santiago";
+function displayTemperature (response) {
+    console.log(response);
 
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+}
 
-console.log(apiUrl);
+let apiKey = "281450ec88936f4fa8ee9864682b49a0";
+let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=santiago&appid=${apiKey}&units=metric";
+
+axios.get(apiUrl).then(displayTemperature);
