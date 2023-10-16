@@ -45,7 +45,22 @@ function displayTemperature(response) {
   
 }
 
-let apiKey = "3f6be1c407b0d9d1933561808db358ba";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=santiago&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+    let apiKey = "3f6be1c407b0d9d1933561808db358ba";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
+}
+
+
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+search("santiago");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
