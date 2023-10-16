@@ -7,6 +7,7 @@ body {
 
 }
 
+
 .container {
     display: grid;
     background: black;
@@ -27,11 +28,13 @@ body {
     
 }
 
+
 .top-section {
     position: relative;
     padding-bottom: 20px;
 
 }
+
 
 .current-weather-section {
     padding-top: 15px;
@@ -45,9 +48,14 @@ body {
 
 
 .current-icon {
-    height: 75px;
-    width: 75px;
+    height: 80px;
+    width: 80px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 0;
+     
 }
+
 
 .current-temp {
     font-size: 55px;
@@ -72,9 +80,11 @@ body {
     top: -32px
 }
 
+
 a {
     text-decoration: none;
 }
+
 
 h1 {
     font-family: 'Kalam', cursive;
@@ -107,7 +117,7 @@ ul {
 li{
     list-style: none;
     color: #fff;
-    text-transform: capitalize;
+    
     text-shadow:
     /*white glow*/
     0 0 7px #fff,
@@ -125,6 +135,17 @@ li{
 
 }
 
+
+li:first-letter {
+    text-transform: capitalize;
+
+}
+
+.current-weather-conditions {
+   padding-top: 50px;
+}
+
+
 .division {
     height: 2px;
     background: #ffee32;
@@ -136,6 +157,7 @@ li{
     padding-top: 30px;
     margin-bottom: 0;
 }
+
 
 .forecast-wrapper {
     display: block;
@@ -168,6 +190,7 @@ li{
     height: 30px
 }
 
+
 .forecast-max-temp {
     font-size: 14px;
     color: #fff;
@@ -184,6 +207,7 @@ li{
     0 0 151px #0fa;
     padding-right: 5px;
 }
+
 
 .forecast-min-temp {
     font-size: 14px;
