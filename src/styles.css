@@ -1,22 +1,107 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Kalam:wght@300&display=swap');
 
 body {
     background: url(../images/background.jpg);
     background-size: cover;
+
+}
+
+.container {
+    background: black;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 750px;
+    height: 550px;
+    padding: 40px;
+    margin-top: 95px;
+    border-radius: 25px;
+    border: 1px solid floralwhite;
+
+}
+
+.current-weather-section {
+    padding-top: 15px;
+}
+
+
+.temperature-wrapper{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+.current-temp {
+    font-size: 55px;
+    color: #fff;
+    text-shadow:
+    /*white glow*/
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /*green glow*/
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa, 
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+
+}
+
+.temperature-wrapper .units {
+    position: relative;
+    font-size: 16px;
+    top: -32px
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
-    color: red;
+    font-family: 'Kalam', cursive;
+    color: #fff;
+    text-shadow:
+    /*white glow*/
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /*pink glow*/
+    0 0 42px #ff499e,
+    0 0 82px #ff499e,
+    0 0 92px #ff499e, 
+    0 0 102px #ff499e,
+    0 0 151px #ff499e;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 10px;
+
 }
 
 
-.container {
-    background: white;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    width: 700px;
-    padding: 40px;
-    margin-top: 100px;
-    border-radius: 25px;
-    border: 1px solid floralwhite;
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+li{
+    list-style: none;
+    color: #fff;
+    text-shadow:
+    /*white glow*/
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /*pink glow*/
+    0 0 42px #ff499e,
+    0 0 82px #ff499e,
+    0 0 92px #ff499e, 
+    0 0 102px #ff499e,
+    0 0 151px #ff499e;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 
 }
 
