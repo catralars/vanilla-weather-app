@@ -12,7 +12,7 @@ body {
     display: grid;
     background: black;
     box-sizing: border-box;
-    width: 780px;
+    width: 750px;
     height: 530px;
     padding: 40px;
     margin-top: 80px;
@@ -47,12 +47,18 @@ body {
 }
 
 
+.current-weather-info-section {
+    padding-left: 25px;
+    padding-right: 0;
+}
+   
+
+
+
 .current-icon {
-    height: 80px;
-    width: 80px;
-    margin-top: 25px;
-    margin-left: 25px;
-    padding: 0;
+    height: 120px;
+    width: 120px;
+   
      
 }
 
@@ -142,7 +148,9 @@ li:first-letter {
 }
 
 .current-weather-conditions {
-   padding-top: 50px;
+   padding-top: 60px;
+   padding-right: 0;
+   
 }
 
 

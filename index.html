@@ -27,11 +27,11 @@
         </div>
         <div class="current-weather-section">
             <div class="row">
-                <div class="col-5 current-weather-info-section">
+                <div class="col-6 current-weather-info-section">
                     <h1 id="city">Santiago</h1>
                     <ul>
-                        <li>Last updated: <span id="date"></span></li>
-                        <li id="description">overcast clouds</li>
+                        <li><span id="date"></span></li>
+                        <li id="description"></li>
                     </ul>
                     <div class="temperature-wrapper">
                         <span class="current-temp" id="temperature">18</span>
@@ -41,10 +41,10 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-3">
-                    <img class="current-icon" src="./icons/partly.png" alt="partly cloudy">
+                <div class="col-3 current-icon-box">
+                    <img class="current-icon" id="current-icon" src="" alt="weather icon">
                 </div>
-                <div class="col-4 current-weather-conditions">
+                <div class="col-3 current-weather-conditions">
                         <li>Humidity: <span id="humidity">11</span>%</li>
                         <li>Wind: <span id="wind">3</span>km/h</li>
                     </ul>
