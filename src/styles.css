@@ -11,13 +11,20 @@ body {
     display: grid;
     background: black;
     box-sizing: border-box;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     width: 780px;
-    height: 500px;
+    height: 530px;
     padding: 40px;
     margin-top: 80px;
     border-radius: 25px;
-
+    border: 5px solid #fff;
+    box-shadow: 
+    0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,            
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;                        
+    
 }
 
 .top-section {
@@ -83,7 +90,7 @@ h1 {
     0 0 92px #ff499e, 
     0 0 102px #ff499e,
     0 0 151px #ff499e;
-    font-size: 40px;
+    font-size: 43px;
     font-weight: 500;
     line-height: 28px;
     margin-bottom: 10px;
@@ -100,6 +107,7 @@ ul {
 li{
     list-style: none;
     color: #fff;
+    text-transform: capitalize;
     text-shadow:
     /*white glow*/
     0 0 7px #fff,
