@@ -12,15 +12,15 @@
     <div class="container">
         <form id="search-form" class="mb-3">
             <div class="row">
-                <div class="col-9">
+                <div class="col-10">
                     <input type="search" 
                     placeholder="Search a city" 
                     class="form-control"
                     id="city-input"
                     autocomplete="off">
                 </div>
-                <div class="col-3">
-                    <input type="submit" value="search">
+                <div class="col-2">
+                    <input type="submit" value="search" class="btn btn-primary">
                 </div>
             </div>
         </form>      
@@ -35,8 +35,8 @@
                     <div class="temperature-wrapper">
                         <span class="current-temp" id="temperature">18</span>
                         <span class="units">
-                            <a href="#" id="celsius">°C | </a>
-                            <a href="#" id="farenheit">°F</a>
+                            <a href="#" id="celsius-link">°C | </a>
+                            <a href="#" id="fahrenheit-link">°F</a>
                         </span>
                     </div>
                 </div>
@@ -116,13 +116,16 @@
             </div>
         </div>
     </div>
-    <small>
+    <div class="footer-note-wrapper">
+        <small class="footer-note">
         <a href="https://github.com/catralars/vanilla-weather-app" 
         target="_blank"
         rel="noreferrer">
         Open-source code
         </a> by Catalina Opazo
-    </small>
+    </small> 
+    </div>
+   
     <script src="src/app.js"></script>
 </body>
 </html>

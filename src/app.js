@@ -60,7 +60,19 @@ function handleSubmit(event) {
     search(cityInputElement.value);
 }
 
+
 search("santiago");
+
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+function displayFahrenheitTemp(event) {
+    event.preventDefault();
+    
+}
+
