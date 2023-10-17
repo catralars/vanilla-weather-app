@@ -23,7 +23,6 @@ function formatDate(timestamp){
 }
 
 
-
 function displayTemperature(response) {
   let tempElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -33,9 +32,9 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#current-icon");
 
+  let celsiusTemp = response.data.main.temp;
 
-  tempElement.innerHTML = Math.round
-  (response.data.main.temp);
+  tempElement.innerHTML = Math.round(celsiusTemp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -61,18 +60,32 @@ function handleSubmit(event) {
 }
 
 
-search("santiago");
+function displayFahrenheitTemp(event) {
+    event.preventDefault();
+    let tempElement = document.querySelector("#temperature");
+    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;  
+    tempElement.innerHTML = Math.round(fahrenheitTemp);
+    
+}
 
+
+function displayCelsiusTemp(event) {
+    event.preventDefault();
+    let tempElement = document.querySelector("#temperature");
+    tempElement.innerHTML = Math.round(celsiusTemp);
+}
+
+
+let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
-function displayFahrenheitTemp(event) {
-    event.preventDefault();
-    
-}
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
 
+
+search("santiago");

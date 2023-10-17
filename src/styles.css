@@ -146,6 +146,9 @@ li:first-letter {
    
 }
 
+.units {
+    color: #fff;
+}
 
 .division {
     height: 2px;
