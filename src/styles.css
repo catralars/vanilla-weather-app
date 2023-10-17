@@ -28,6 +28,15 @@ body {
     
 }
 
+.btn {
+    background: #ff6392;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    height: 38px;
+
+}
+
 
 .current-weather-section {
     padding-top: 15px;
