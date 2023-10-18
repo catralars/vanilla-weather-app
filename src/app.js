@@ -32,7 +32,7 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#current-icon");
 
-  let celsiusTemp = response.data.main.temp;
+  celsiusTemp = response.data.main.temp;
 
   tempElement.innerHTML = Math.round(celsiusTemp);
   cityElement.innerHTML = response.data.name;
@@ -63,6 +63,10 @@ function handleSubmit(event) {
 function displayFahrenheitTemp(event) {
     event.preventDefault();
     let tempElement = document.querySelector("#temperature");
+    // remove the active class to the celsius link //
+    celsiusLink.classList.remove("active");
+    // add the active class to fahrenheit link //
+    fahrenheitLink.classList.add("active");
     let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;  
     tempElement.innerHTML = Math.round(fahrenheitTemp);
     
@@ -71,6 +75,10 @@ function displayFahrenheitTemp(event) {
 
 function displayCelsiusTemp(event) {
     event.preventDefault();
+    // add the active class to the celsius link //
+    celsiusLink.classList.add("active");
+    // remove the active class to fahrenheit link //
+    fahrenheitLink.classList.remove("active");
     let tempElement = document.querySelector("#temperature");
     tempElement.innerHTML = Math.round(celsiusTemp);
 }

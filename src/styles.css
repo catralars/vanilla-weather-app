@@ -159,6 +159,12 @@ li:first-letter {
     color: #fff;
 }
 
+.temperature-wrapper .active {
+    color: #fff;
+    cursor: default;
+    
+}
+
 .division {
     height: 2px;
     background: #ffee32;
@@ -252,5 +258,6 @@ li:first-letter {
 .footer-note {
     font-family: cursive;
     font-weight: bold;
+    opacity: 0.7;
 
 }
