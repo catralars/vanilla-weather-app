@@ -60,8 +60,8 @@ body {
 .current-icon {
     height: 120px;
     width: 120px;
-   
-     
+    padding-left: 0;
+        
 }
 
 
@@ -162,7 +162,7 @@ li:first-letter {
 .temperature-wrapper .active {
     color: #fff;
     cursor: default;
-    
+
 }
 
 .division {
