@@ -173,7 +173,7 @@ li:first-letter {
 
 
 .weather-forecast {
-    padding-top: 30px;
+    padding-top: 25px;
     margin-bottom: 0;
 }
 
@@ -182,6 +182,7 @@ li:first-letter {
     display: block;
     text-align: center;
     border: none;
+   
 }
 
 

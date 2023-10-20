@@ -23,6 +23,33 @@ function formatDate(timestamp){
 }
 
 
+function displayForecast(){
+    let forecastElement = document.querySelector("#forecast");
+
+    let forecastHTML = `<div class="row">`;
+    let days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu"];
+    days.forEach(function (day) {forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-sm-2">
+            <div class="forecast-wrapper">
+                <div class="weather-forecast-date">
+                ${day}
+                </div>
+                <img src="./icons/partly.png" alt="forecast icon" class="forecast-weather-icon">
+                <div class="forecast-temperature-wrapper">
+                    <span class="forecast-max-temp">12</span>
+                    <span class="forecast-min-temp">7</span>
+                </div>
+            </div>
+        </div>     
+    `;})
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+
+    
+}
+
 function displayTemperature(response) {
   let tempElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -97,3 +124,5 @@ celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 
 search("santiago");
+
+displayForecast();
