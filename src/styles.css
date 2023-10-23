@@ -13,7 +13,7 @@ body {
     background: black;
     box-sizing: border-box;
     width: 750px;
-    height: 520px;
+    height: 530px;
     padding: 40px;
     margin-top: 60px;
     border-radius: 25px;
@@ -173,7 +173,7 @@ li:first-letter {
 
 
 .weather-forecast {
-    padding-top: 25px;
+    padding-top: 15px;
     margin-bottom: 0;
 }
 
@@ -207,7 +207,8 @@ li:first-letter {
 
 .forecast-weather-icon {
     margin: 20px 0 20px 0;
-    height: 30px
+    width: 60px;
+    padding: 0;
 }
 
 
