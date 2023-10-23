@@ -23,7 +23,8 @@ function formatDate(timestamp){
 }
 
 
-function displayForecast(){
+function displayForecast(response){
+    console.log(response.data.daily);
     let forecastElement = document.querySelector("#forecast");
 
     let forecastHTML = `<div class="row">`;
@@ -46,9 +47,18 @@ function displayForecast(){
     `;})
     forecastHTML = forecastHTML + `</div>`;
     forecastElement.innerHTML = forecastHTML;
-
     
 }
+
+
+function getForecast(coordinates) {
+    console.log(coordinates);
+    let apiKey = "0ca61c7b17f8abb0t534930b23eob275";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}`;
+    console.log(apiUrl);
+    axios.get(apiUrl).then(displayForecast);
+}
+
 
 function displayTemperature(response) {
   let tempElement = document.querySelector("#temperature");
@@ -68,6 +78,8 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate (response.data.dt * 1000);
   iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  getForecast(response.data.coord);
   
 }
 
@@ -125,4 +137,3 @@ celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("santiago");
 
-displayForecast();
